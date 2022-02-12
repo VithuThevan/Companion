@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Company extends Model
+{
+    use HasFactory;
+    protected $table='Company';
+    protected $fillable = [
+        'Company_ID',
+        'Company_Name',
+        'Address_Number',
+        'Address_Street',
+        'Address_City',
+    ];
+}
